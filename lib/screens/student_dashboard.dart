@@ -226,7 +226,7 @@ class _StudentDashboardState extends State<StudentDashboard> {
                     ),
                   ),
                   child: Text(
-                    'Generate Quizzes',
+                    'Generate Quiz',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
