@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learnwithprime/screens/Login_screen.dart';
+import 'package:learnwithprime/screens/register_loading_screen.dart';
 
 class RegisterScreen3 extends StatefulWidget {
   const RegisterScreen3({super.key});
@@ -177,8 +178,16 @@ class _RegisterScreen3State extends State<RegisterScreen3> {
                   height: 60,
                   child: ElevatedButton(
                     onPressed: () {
-                      if (_formKey.currentState!.validate()) {}
+                      if (_formKey.currentState!.validate()) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const RegisterLoadingScreen(),
+                          ),
+                        );
+                      }
                     },
+
                     style: ElevatedButton.styleFrom(
                       backgroundColor: primaryColor,
                       shape: RoundedRectangleBorder(
