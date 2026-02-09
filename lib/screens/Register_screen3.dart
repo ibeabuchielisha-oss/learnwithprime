@@ -178,14 +178,12 @@ class _RegisterScreen3State extends State<RegisterScreen3> {
                   height: 60,
                   child: ElevatedButton(
                     onPressed: () {
-                      if (_formKey.currentState!.validate()) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => const RegisterLoadingScreen(),
-                          ),
-                        );
-                      }
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const RegisterLoadingScreen(),
+                        ),
+                      );
                     },
 
                     style: ElevatedButton.styleFrom(
