@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'student_dashboard.dart';
+import 'package:learnwithprime/screens/Home_container.dart';
 
 class RegisterSuccessScreen extends StatelessWidget {
   const RegisterSuccessScreen({super.key});
@@ -32,7 +32,7 @@ class RegisterSuccessScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
                     context,
-                    MaterialPageRoute(builder: (_) => const StudentDashboard()),
+                    MaterialPageRoute(builder: (_) => const HomeContainer()),
                     (route) => false,
                   );
                 },
